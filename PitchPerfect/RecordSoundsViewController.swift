@@ -1,10 +1,8 @@
-//
 //  RecordSoundsViewController.swift
 //  PitchPerfect
 //
 //  Created by Alan Joseph Hekle on 2017-06-20.
 //  Copyright © 2017 Alan Joseph Hekle. All rights reserved.
-//
 import UIKit
 import AVFoundation
 
@@ -21,10 +19,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         stopRecordingButton.isEnabled = false
     }
     @IBAction func recordAudio(_ sender: AnyObject) {
-        //recordingLabel.text = "Recording in progress"
-        //stopRecordingButton.isEnabled = true
-        //recordButton.isEnabled = false
-        
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
         let recordingName = "recordedVoice.wav"
         let pathArray = [dirPath, recordingName]
@@ -42,18 +36,15 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         switch(isRecording) {
         case true:
             recordingLabel.text = "Recording in progress"
-            stopRecordingButton.isEnabled = true
-            recordButton.isEnabled = false
+            stopRecordingButton.isEnabled = false
+            recordButton.isEnabled = true
         case false:
             recordingLabel.text = "Tap to Record"
-            recordButton.isEnabled = true
-            stopRecordingButton.isEnabled = false
+            recordButton.isEnabled = false
+            stopRecordingButton.isEnabled = true
         }
     }
     @IBAction func stopRecording(_ sender: AnyObject) {
-        //recordButton.isEnabled = true
-        //stopRecordingButton.isEnabled = false
-        //recordingLabel.text = "Tap to Record"
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
