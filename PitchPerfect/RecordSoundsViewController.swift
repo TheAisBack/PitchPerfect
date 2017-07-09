@@ -43,7 +43,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         case true:
             recordingLabel.text = "Recording in progress"
             stopRecordingButton.isEnabled = true
-           recordButton.isEnabled = false
+            recordButton.isEnabled = false
         case false:
             recordingLabel.text = "Tap to Record"
             recordButton.isEnabled = true

@@ -58,9 +58,9 @@
 		418E1EAC1EF98D8900D75BD2 /* PitchPerfect */ = {
 			isa = PBXGroup;
 			children = (
-				418E1EAD1EF98D8900D75BD2 /* AppDelegate.swift */,
 				418E1EAF1EF98D8900D75BD2 /* RecordSoundsViewController.swift */,
 				418E1EB11EF98D8900D75BD2 /* Main.storyboard */,
+				418E1EAD1EF98D8900D75BD2 /* AppDelegate.swift */,
 				418E1EB41EF98D8900D75BD2 /* Assets.xcassets */,
 				418E1EB61EF98D8900D75BD2 /* LaunchScreen.storyboard */,
 				418E1EB91EF98D8900D75BD2 /* Info.plist */,

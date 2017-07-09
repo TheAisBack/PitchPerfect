@@ -19,6 +19,13 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
+    //self.imageView.contentMode = UIViewContentMode.ScaleAspectFit
+    //self.imageView.image = imageChosen
+    // snailButton.imageView setContentMode:UIViewContentModeScaleAspectFit;
+    //contentMode
+    //imageView
+    //AspectFit
+    
     var recordedAudioURL: URL!
     var audioFile:AVAudioFile!
     var audioEngine:AVAudioEngine!
